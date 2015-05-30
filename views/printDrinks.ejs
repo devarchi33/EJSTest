@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Print Drinks</title>
+</head>
+<body>
+	<p><%= tagline %></p>
+	<h2>Loop</h2>
+	<ul>
+		<% drinks.forEach( function (drink ) { %>
+		<li><%= drink.name %> - <%= drink.drunkness %></li> <% }); %>
+	</ul>
+</body>
+</html>
