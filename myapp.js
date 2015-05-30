@@ -57,4 +57,8 @@ app.use(function(err, req, res, next) {
 });
 
 
+app.listen(3001,'192.168.2.124',function(){
+	console.log('Server Ready...');
+});
+
 module.exports = app;
