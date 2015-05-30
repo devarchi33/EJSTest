@@ -1,6 +1,11 @@
 /**
  * New Node Router File 
  */
-module.exports = function() {
-	console.log('My Router.js');
+var service = require('./services');
+
+module.exports = function(app) {
+//	console.log('My Router.js');
+	
+	app.get('/', service.Index);
+	app.post('/user_info', service.user_info);
 };
