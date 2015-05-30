@@ -61,4 +61,5 @@ app.listen(3001,'192.168.2.124',function(){
 	console.log('Server Ready...');
 });
 
+require('./routes/myrouter.js')();
 module.exports = app;

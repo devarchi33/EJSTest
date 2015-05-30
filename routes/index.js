@@ -10,6 +10,7 @@ router.get('/user_info_form', function(req, res, next) {
 	  res.render('user/user_info_form', { id : 'skyfly33', name : '이동훈', age : '30' });
 });
 
+/* POST pages */
 router.post('/user_info', function(req, res, next) {
 	  res.render('user/user_info', { id : req.body.id, name : req.body.name, age : req.body.age });
 });
